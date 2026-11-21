@@ -1,0 +1,12 @@
+# Exported from Render on 2026-11-21T10:35:26Z
+version: "1"
+services:
+- type: web
+  name: download_wechat
+  runtime: docker
+  repo: https://github.com/chungmeng89-ui/download_wechat
+  plan: free
+  region: oregon
+  dockerContext: .
+  dockerfilePath: ./Dockerfile
+  autoDeployTrigger: commit
